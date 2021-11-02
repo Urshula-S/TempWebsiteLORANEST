@@ -1,0 +1,324 @@
+/* Body */
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+/* Styles génériques */
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin-left: -40px;
+    font-family: 'Roboto' , sans-serif;
+    line-height: 145%;
+}
+
+p {
+    font-family: 'Roboto' , sans-serif;
+    text-align: justify;
+}
+
+/* Header */
+header {
+    height: 250px;
+    width: 100%;
+    font-family: 'Montserrat' , sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 35px;
+}
+
+header h1 {
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4776e6;
+    width: 90%;
+    padding: 0px 5%;
+    text-align: center;
+}
+
+header h2 {
+    color: #12d8fa;
+    width: 90%;
+    padding: 0px 5%;
+    text-align: center;
+}
+
+#paragraphePrincipal p {
+    width: 90%;
+    padding: 0px 5%;
+    text-align: center;
+    line-height: 150%;
+}
+
+/* Section principale */
+#sectionPrincipale {
+    min-height: 500px;
+    width: 90%;
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.columnStyle {
+    width: 45%;
+    min-height: 480px;
+    margin: 10px 0px;
+    padding: 25px 38px;
+}
+
+#sectionPrincipale img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#captionText {
+    color: whitesmoke;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.card {
+    width: 44%;
+    min-height: 115px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    -webkit-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.6);
+    box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.6);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cardText {
+    align-items: center;
+    height: 70px;
+}
+
+.cardLink {
+    text-decoration: none;
+    font-family: 'Montserrat' , sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+a:hover {
+    font-weight: 500;
+}
+
+.cardBtn {
+    background-color: #4776e6;
+    padding: 0px 15px;
+    text-align:center;
+    border-radius: 8px;
+    color: white;
+    font-size: 0.8em;
+    min-width: 260px;
+    height: 62px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 2px;
+}
+
+.cardBtn:hover {
+    background-color: #12d8fa;
+    color: #4776e6;
+    font-weight: 500;
+}
+
+#colRight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Section infosDuCabinet */
+#infosDuCabinet {
+    background-color: #4776e6;
+    width: 90%;
+    padding: 25px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infosActivite {
+    /*background-color: aqua;*/
+    margin: 10px 0px;
+    padding: 25px 38px;
+    width: 28%;
+    height: 190px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 0.9em;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* Header */
+    header {
+        height: 60%;
+        width: 100%;
+        font-family: 'Montserrat' , sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 35px;
+    }
+
+    /* Section principale */
+    #sectionPrincipale {
+        min-height: 590px;
+        width: 90%;
+        padding: 25px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .columnStyle {
+        width: 90%;
+        min-height: 480px;
+        margin: 10px 0px;
+        padding: 25px 38px;
+        padding: 15px 12px;
+    }
+
+    .columnStyle:nth-child(1) {
+        display:flex;
+        flex-direction: column-reverse;
+        /*margin-top: 50px;*/
+    }
+
+    #captionText {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+        background-color: whitesmoke;
+        min-height: 115px;
+        border-radius: 8px;
+        padding: 15px;
+
+        -webkit-box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.6);
+        box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.6);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .cardText {
+        height: 70px;
+        text-align: center;
+    }
+
+    .cardBtn {
+        color: white;
+        border-radius: 8px;
+        font-size: 0.8em;
+
+        height: 62px;
+        text-align: center;
+        width: 320.8px;
+    }
+
+    .cardBtn:hover {
+        background-color: #12d8fa;
+        color: #4776e6;
+        font-weight: 500;
+    }
+
+    /*
+
+    .cardBtn {
+        
+        padding: 0px 15px;
+        text-align:center;
+        min-width: 260px;
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 2px;
+    }
+
+    #colRight {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    */
+
+    /* Section infosDuCabinet */
+    #infosDuCabinet {
+        background-color: #4776e6;
+        width: 90%;
+        padding: 25px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .infosActivite {
+        /*background-color: blue;*/
+        padding: 0px 12px;
+        width: 90%;
+        min-height: 220px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Roboto' , sans-serif;
+        font-size: 0.9em;
+        /*background-color: lightcoral;*/
+    }
+}
