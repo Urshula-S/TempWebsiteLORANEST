@@ -1,0 +1,239 @@
+/* Styles generaux */
+body {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+h3 {
+    letter-spacing: 0.03em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin: 30px 0px;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+p , li {
+    font-family: 'Roboto' , sans-serif;
+}
+/* Fin des styles generaux */
+
+
+/* Style du header */
+header {
+    width: 100%;
+    font-family: 'Montserrat' , sans-serif;
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 2em;
+    padding: 0px 30px;
+    color: #2F80ED;
+}
+
+header h2 {
+    letter-spacing: 0.03em;
+    padding: 0px 50px;
+    color: #12d8fa;
+}
+
+#introParagraphe {
+    width: 100%;
+    line-height: 180%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#introParagraphe > p {
+    text-align: center;
+    padding: 0px 50px;
+}
+/* Fin du style du header */
+
+#preParagraphe {
+    line-height: 150%;
+    text-align: justify;
+}
+
+a {
+    font-family: 'Montserrat' , sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+a:hover {
+    color: #2F80ED;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    line-height: 150%;
+    margin-left: -40px;
+    text-align: center;
+}
+
+/*
+#sectionInfo {
+    min-height: 500px;
+    padding: 25px 18px;
+}
+*/
+
+/* Style de la premiere section */
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+#infosNavigation .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.col {
+    width:45%;
+    min-height: 520px;
+    object-fit: cover;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+#rowColRight {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    width:40%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 1px 15px -2px rgba(0,0,0,0.6);
+    padding: 0px 2% 15px 2%;
+    margin-bottom: 25px;
+}
+
+.textCard {
+    height: 75px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    text-align:center;
+}
+
+.btnStyle {
+    background-color: #4776e6;
+    font-size: 0.8em;
+    padding: 15px 10px;
+    border-radius: 8px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnStyle:hover {
+    background-color: #12d8fa;
+}
+
+/* Style row activites et horaires */
+#infosCabinet {
+    background-color: #4776e6;
+    height: 300px;
+    justify-content: space-evenly;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+#activites , #horaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+}
+
+/* Style du footer */
+footer {
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+/*
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    header {
+        width: 100vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    #preParagraphe {
+        order: 2;
+    }
+
+    #rowColRight {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0px 5% 15px 5%;
+    }
+
+    #infosCabinet {
+        width: 100vw;
+        display:flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+}
+*/
